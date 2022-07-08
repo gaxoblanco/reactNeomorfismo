@@ -1,0 +1,35 @@
+.CreateTodoButton{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    color:rgb(212, 226, 226);
+    border: none;
+    border-radius: 50%;
+    background: #08c6ab;
+    background: linear-gradient(145deg, #08c6ab, #079f88);
+    box-shadow:  9px 9px 9px #10151b,
+                -9px -9px 11px #324256; 
+}
+.CreateTodoButton button{
+    position: relative;
+}
+ button div {
+ margin-top: -26px
+}
+.shadow-white{
+    color: #32425647; 
+    position: absolute;
+    margin-top: -28px;
+    margin-left: -4px;
+}
+.shadow-black{
+    color: #10151b60;
+    position: absolute;
+    margin-top: -22px;
+    margin-left: 4px;
+}
+.icon{
+    position: absolute;
+}

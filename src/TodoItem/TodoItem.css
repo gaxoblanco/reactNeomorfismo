@@ -1,0 +1,26 @@
+.TodoItem{    
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    place-items: center;
+    margin: 40px 10px;
+    width: 280px;
+    height: 60px;
+    border-radius: 22px;
+    background: #212B38;
+    box-shadow:  9px 9px 9px #10151b,
+                 -9px -9px 9px #324155;
+}
+.TodoItem svg{
+    width: 30px;
+    height: 30px;
+}
+.check{
+    margin-left: -40px;
+}
+.check--active{
+  color: #08c6ab;  
+}
+.delete{
+    margin-left: 40px;
+    color: #d45a5a;
+}
