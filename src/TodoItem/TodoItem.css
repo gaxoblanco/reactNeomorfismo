@@ -4,7 +4,7 @@
     place-items: center;
     margin: 40px 10px;
     width: 280px;
-    height: 60px;
+    min-height: 60px;
     border-radius: 22px;
     background: #212B38;
     box-shadow:  9px 9px 9px #10151b,
@@ -14,13 +14,12 @@
     width: 30px;
     height: 30px;
 }
-.check{
-    margin-left: -40px;
-}
 .check--active{
   color: #08c6ab;  
 }
+.TodoItem p{
+    max-width: 180px;
+}
 .delete{
-    margin-left: 40px;
     color: #d45a5a;
 }

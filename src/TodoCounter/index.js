@@ -8,14 +8,10 @@ function TodoCounter(){
     return (
         // <h2 style={styles}> Has completado 2 de 3 Todos </h2>
         <div className="TodoCounter">
-            <h2> Has completado {completedTodos} de {totalTodos} Todos </h2>
+            <h2> Has completado {completedTodos} de {totalTodos} Tareas </h2>
         </div>
     )
 }
 
-// const styles = {
-//     color: "purple",
-//     backgroundColor: "papayayon"
-// };
 
 export  {TodoCounter};

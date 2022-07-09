@@ -5,13 +5,12 @@ import './TodoSearch.css';
 function TodoSearch (){
     const {searchV, setSearchV} = React.useContext(TodoContext);
     const onSearchValueChange = (event)=>{
-        console.log(event.target.value);
         setSearchV(event.target.value);
     }
     return (
         <div className="TodoSearch">
             <input 
-                placeholder="Cebolla"
+                placeholder="Buscar"
                 onChange={onSearchValueChange}
                 value={searchV}
                 />

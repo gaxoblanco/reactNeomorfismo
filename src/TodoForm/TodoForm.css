@@ -1,0 +1,54 @@
+.container-todo--form{
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr auto 1fr;
+
+    width: 300px;
+    height: 300px;
+    border-radius: 22px;
+    background: #212B38;
+    box-shadow:  9px 9px 9px #10151b,
+                 -9px -9px 9px #324155;
+    
+}
+
+.todo-label{
+    font-size: 20px;
+}
+.form--textarea{
+    width: 220px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 14px;
+    padding: 10px 6px 6px 6px;
+}
+.container-form--button{
+    width: 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-left: 2px;
+}
+.container-form--button button{
+    border: none;
+    width: 80px;
+    padding: 6px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(212, 226, 226);
+    border-radius: 6px;
+    box-shadow:  9px 9px 9px #10151b,
+    -9px -9px 9px #324155;
+
+    text-shadow:  2px 2px 2px #3c4756,
+    2px 2px 8px #5c7493;
+
+    text-shadow: inset 18px 18px 19px #727272,
+            inset -18px -18px 19px #ffffff;
+
+}
+.container-form--button button:nth-child(1){
+    background: #d45a5a;
+}
+.container-form--button button:nth-child(2){
+    background: #08c6ab; 
+}
