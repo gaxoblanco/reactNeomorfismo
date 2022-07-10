@@ -4,7 +4,7 @@ import {CreateTodoButton} from '../CreateTodoButton';
 
 function EmptyTodos ({setOpenModal}){
     return (
-        <span className={'EmptyTodos'}>
+        <span className={'EmptyTodos shadow'}>
             <p>Crea tu primer tarea</p>
         </span>
     )

@@ -24,7 +24,7 @@ function TodoForm (){
     }
 
     return(
-        <form className="container-todo--form" onSubmit={Submit}>
+        <form className="container-todo--form shadow" onSubmit={Submit}>
             <label className="todo-label">Escribe tu nuevo Todo</label>
             <textarea 
                 className="form--textarea"

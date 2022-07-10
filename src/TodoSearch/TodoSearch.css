@@ -14,7 +14,3 @@
     box-shadow: inset 9px 9px 9px #10151b,
                 inset -9px -9px 9px #324155;
 }
-
-input:focus{
-outline-color: red;
-}

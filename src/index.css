@@ -14,3 +14,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.shadow {
+  border-radius: 22px;
+  background: #212B38;
+  box-shadow:  9px 9px 9px #10151b,
+               -9px -9px 9px #324155;
+}

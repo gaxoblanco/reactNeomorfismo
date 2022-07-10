@@ -10,7 +10,7 @@ function TodoItem(props){
     // }
 
     return (
-        <li className="TodoItem">
+        <li className="TodoItem shadow">
             <span 
                 className={`check ${props.completed && 'check--active'}`}
                 onClick={props.onComplete}
