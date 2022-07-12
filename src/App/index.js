@@ -39,32 +39,50 @@ function App() {
 
   return (
     <React.Fragment>
-      <TodoHeader>
+      <TodoHeader
+        loading={loading}
+      >
           <TodoCounter 
-              totalTodos={totalTodos} 
-              completedTodos={completedTodos}
+            totalTodos={totalTodos} 
+            completedTodos={completedTodos}
           />
-          <TodoSearch 
-              searchV={searchV}
-              setSearchV={setSearchV}
+          <TodoSearch
+            searchV={searchV}
+            setSearchV={setSearchV}
           />
       </TodoHeader>
 
-        <TodoList>
-          {error  && <TodosError error={error} />}
-          {loading  && new Array(3).fill(1).map((a,i)=><MyLoader key={i}/>)}
-          {(!loading && !searchedTodos.length) && <EmptyTodos/> }
-
-          {searchedTodos.map(todo =>(
-        <TodoItem 
+      <TodoList 
+        error={error}
+        loading={loading}
+        searchedTodos={searchedTodos}
+        totalTodos={totalTodos}
+        searchText={searchV}
+        onError ={()=> <TodosError/> }
+        onLoading = {()=> <MyLoader/>}
+        onEmptyTodos ={()=> <EmptyTodos/> }
+        onEmptySerchResults = {(searchText) => <p>no tenemos resultados para {searchText}</p>}
+        render={todo =>(
+          <TodoItem 
             key={todo.text} 
             text={todo.text} 
             completed={todo.completed}
             onComplete={()=>completeTodo(todo.text)}
             onDelete={()=>deleteTodo(todo.text)}
             />
-          ))}
-        </TodoList>
+        )}
+      />
+
+        {/* {todo =>(
+          <TodoItem 
+            key={todo.text} 
+            text={todo.text} 
+            completed={todo.completed}
+            onComplete={()=>completeTodo(todo.text)}
+            onDelete={()=>deleteTodo(todo.text)}
+            />
+        )} */}
+      
     {!!openModal && (
       <Modal>
         <TodoForm 

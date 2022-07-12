@@ -3,7 +3,6 @@
     grid-template-columns: 1fr auto 1fr;
     place-items: center;
     margin: 40px 10px;
-    width: 280px;
     min-height: 60px;
 
 }

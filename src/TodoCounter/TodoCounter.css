@@ -14,3 +14,7 @@
     -2px -2px 2px #324155;
 
 }
+
+.TodoCounter--loading{
+    color: rgb(120, 120, 120);
+}

@@ -4,6 +4,7 @@
     
 }
 .TodoSearch input{
+    width: 240px;
     font-size:18px;
     border-radius: 51px;
     border: none;
@@ -13,4 +14,8 @@
     background: #212B38;
     box-shadow: inset 9px 9px 9px #10151b,
                 inset -9px -9px 9px #324155;
+}
+
+.TodoSearch:disabled{
+    opacity: 25%;
 }
