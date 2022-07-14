@@ -9,10 +9,10 @@ function CreateTodoButton({openModal, setOpenModal}){
 
     return (
         <button 
-            className="CreateTodoButton"
+            className="CreateTodoButton shadow"
             onClick={onClickButton}
         >
-                <h1>+</h1>
+                <h1 className="textShadow">+</h1>
         </button>)
 }
 

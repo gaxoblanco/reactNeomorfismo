@@ -1,0 +1,20 @@
+.ChangeAlert{
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr auto 1fr;
+
+    width: 300px;
+    height: 200px;
+}
+
+.ChangeAlert button{
+    width: 160px;
+    padding: 10px;
+    color:rgb(212, 226, 226);
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border:none;
+    border-radius: 16px;
+    background-color:#08c6ab;
+}

@@ -9,11 +9,6 @@
     font-size: 16px;
     text-align: center; 
 }
-.TodoCounter h2{
-    text-shadow:  2px 2px 2px #10151b,
-    -2px -2px 2px #324155;
-
-}
 
 .TodoCounter--loading{
     color: rgb(120, 120, 120);
