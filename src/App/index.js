@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import {useTodos} from './useTodos';
 
-
+import {ChangeAlertWithStorageListener} from '../ChangeAlert';
 import {TodoCounter} from '../TodoCounter'
 import {TodoSearch} from '../TodoSearch';
 import {TodoList} from '../TodoList';
@@ -95,6 +95,8 @@ function App() {
     <CreateTodoButton 
       setOpenModal={setOpenModal}
     />
+
+    <ChangeAlertWithStorageListener />
   </React.Fragment>
   );
 }
