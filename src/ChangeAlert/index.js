@@ -3,7 +3,14 @@ import {withStorageListener} from './withStorageListener';
 
 function ChangeAlert({show, toggleShow}){
     if(show){
-       return <p>Hubieron cambios</p>;
+       return (
+        <div>
+            <p>Hubieron cambios</p>
+            <button
+            onClick={()=>toggleShow(false)}
+            >Volver a cargar</button>
+        </div>
+       );
     }
     else{
         return null;
